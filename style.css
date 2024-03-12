@@ -1,0 +1,203 @@
+*::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('bg.mp4') no-repeat center center fixed;
+    background-size: cover;
+}   
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video is behind other elements */
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(192, 225, 236, 0.5); /* Adjust the color and opacity as needed */
+    z-index: -1; /* Place the overlay behind the video */
+}
+#header
+{
+    width: 50%;
+    margin-top: 0%;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    border: 3px solid #ddd;
+    background: linear-gradient(to left, hsl(61, 90%, 55%), hsl(61, 90%, 55%), hsl(61, 90%, 55%), orange);
+    background-size: 100% 80%;        
+    animation: flyColor 15s infinite alternate;
+}
+#paragraph
+{
+    background-color: rgb(246, 249, 214);
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    border: 2px solid #ddd;
+}
+b{
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+} 
+.heading{
+    width: 50%;
+    margin-top: 0%;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: cursive;
+}
+.profile-image{
+    border-radius: 50%;
+    margin-right: 10px;
+    display: block;
+    margin: auto;
+    max-width: 300%;
+    max-height: 300%;
+    transition: transform 0.3s ease;
+}
+.table-profile{
+    width: 80%;
+    padding-top: 0%;
+    margin-left: 0%;
+    display: flex;
+    align-items: center;
+    max-width: -200px;
+    border-collapse: collapse; 
+}
+td {
+    text-align: center;
+    padding: 10px;
+    width: 900px; 
+    height: -30px; 
+}
+@keyframes flyColor1 {
+    0% {
+        background-color: #3498db; /* Start color */
+    }
+    50% {
+        background-color: #e74c3c; /* Middle color */
+    }
+    100% {
+        background-color: #2ecc71; /* End color */
+    }
+}
+@keyframes flyColor {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px ;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px ;
+    }
+  }
+
+.progress-container1 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.progress-bar1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        lightgreen 0% 76.9%, /* Color for completed percentage (90%) */
+        lightpink 0% 100% /* Background color for remaining percentage (10%) */
+    );
+    transform: rotate(90deg); /* Start the progress from the top */
+}
+
+.percentage1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0d0d0d; /* Text color for completed percentage */
+    font-size: 15px;
+}
+
+.progress-container2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.progress-bar2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        lightgreen 0% 80.72%, /* Color for completed percentage (90%) */
+        lightpink 0% 100% /* Background color for remaining percentage (10%) */
+    );
+    transform: rotate(90deg); /* Start the progress from the top */
+}
+
+.percentage2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0d0d0d; /* Text color for completed percentage */
+    font-size: 15px;
+}
+.progress-container3 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.progress-bar3 {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        lightgreen 0% 69.44%, /* Color for completed percentage (90%) */
+        lightpink 0% 100% /* Background color for remaining percentage (10%) */
+    );
+    transform: rotate(90deg); /* Start the progress from the top */
+}
+
+.percentage3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0d0d0d; /* Text color for completed percentage */
+    font-size: 15px;
+}
+.img-center
+{
+    text-align: center;
+}
+table {
+    max-width: 100%;
+    
+}
